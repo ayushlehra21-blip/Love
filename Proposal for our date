@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Important Question for Nandini 😌</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #ff758c, #ff7eb3);
+      height: 100vh;
+      overflow: hidden;
+      color: white;
+    }
+    h1 {
+      margin-top: 80px;
+    }
+    p {
+      font-size: 20px;
+      margin: 10px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 20px;
+    }
+    #yesBtn {
+      background-color: #28a745;
+      color: white;
+    }
+    #noBtn {
+      background-color: #dc3545;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <h1>Nandini, serious question 😌</h1>
+  <p>Will you go on a date with me?</p>
+  <p>(I promise good food + elite level jokes… 70% success rate)</p>
+  <script>
+    const noBtn = document.getElementById("noBtn");
+
+    noBtn.addEventListener("mouseover", () => {
+      const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+      const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+      noBtn.style.left = x + "px";
+      noBtn.style.top = y + "px";
+    });
+
+    noBtn.addEventListener("click", () => {
+      alert("Nice try Nandini 😂 but that's not an option");
+    });
+
+    function sayYes() {
+      document.body.innerHTML = `
+        <h1 style='margin-top:150px;'>LESSGOOO 😎</h1>
+        <p>Prepare yourself for the best date ever (no refunds)</p>
+      `;
+    }
+  </script>
